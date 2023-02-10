@@ -1,0 +1,82 @@
+/*FONTS*/
+body{
+	font-family: 'Poppins';
+	background: var(--background-color);
+}
+
+/*COLORS*/
+:root{
+	--background-color: #fefefe;
+	--nav-color-gray: #979797;
+	--nav-color-teal: #39C0B2;
+	--text-color-gray: #535353;
+	--accent-color-purple: #B0B0E7;
+	--accent-color-blue: #A1CEEC;
+	--accent-color-pink: #F2A4B7;
+	--accent-color-green: #B5DE8A;
+	--hover-color:#7B61FF;
+	}
+
+/* NAVIGATION */
+.mobile-bottom-nav {
+	background: white;
+	border-top: 0.5px solid #F1F3F4;
+	filter: drop-shadow(0px 1px 16px rgba(0, 0, 0, 0.05));
+	bottom: 0;
+	margin-bottom: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+  }
+  
+  .mobile-bottom-nav nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-content: stretch;
+	align-items: stretch;
+  }
+  
+  .mobile-bottom-nav nav a {
+	padding: 12px 16px;
+	line-height: 1;
+	/* color: inherit; */
+	text-decoration: none;
+  }
+  
+  .mobile-bottom-nav nav a:hover {
+	text-decoration: none;
+  }
+  
+  .mobile-bottom-nav nav a span {
+	display: block;
+	text-align: center;
+  }
+  
+  .mobile-bottom-nav .bottom-navbar-text {
+	padding-bottom: 0;
+	font-size: .875em;
+	font-weight: 600;
+  }
+
+  .mobile-bottom-nav a.active {
+	color: var(--nav-color-teal);
+  }
+
+  .mobile-bottom-nav a.active svg {
+	fill: var(--nav-color-teal);
+  }
+
+  .mobile-bottom-nav a.inactive {
+	color: var(--nav-color-gray);
+  }
+
+  .mobile-bottom-nav a.inactive svg {
+	fill: var(--nav-color-gray);
+  }
+
+  
+
+ 
