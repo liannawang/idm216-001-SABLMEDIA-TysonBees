@@ -11,8 +11,30 @@
 </head>
 
 <body>
-        <mobile-footer__order></mobile-footer__order>
-        <script type="module" src="script/main.js"></script>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/svg/Logo+Bee.svg" alt="Bee with trail">
+        </div>
+        <!-- <div class="header__banner">
+                <a href="" class="header__banner--text"><img src="images/svg/clock.svg" class="header__banner--icon" alt="Clock Icon">11:00 am - 5:00 pm</a>
+                <a href="" class="header__banner--text"><img src="images/svg/place.svg" class="header__banner--icon" alt="Location Icon">3260 Spruce St.</a>
+        </div> -->
+    </header>
+
+    <main>
+        <form class="search-form">
+            <input type="search" value="" placeholder="Search menu item" class="search-input">
+            <button type="submit" class="search-button">
+                <img src="images/svg/navigate/light/bar/icon/outline/search-normal.svg" class="submit-button">
+            </button>
+            <div class="search-option">
+              <div>
+                <img src="images/svg/filter icon.svg">
+              </div>
+          </form>
+    </main>
+    <mobile-footer__order></mobile-footer__order>
+    <script type="module" src="script/main.js"></script>
 </body>
 
 </html>

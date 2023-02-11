@@ -1,21 +1,66 @@
 /*FONTS*/
+@font-face {
+	font-family: 'Fairwater Script';
+	src: url(/fonts/Fairwater\ Script\ Bold.ttf);
+}
+
 body{
 	font-family: 'Poppins';
 	background: var(--background-color);
+	margin: 0;
 }
+
+main{
+	padding: 24px 20px;
+}
+
 
 /*COLORS*/
 :root{
 	--background-color: #fefefe;
+	--banner-color:#F0F7F6;
 	--nav-color-gray: #979797;
 	--nav-color-teal: #39C0B2;
 	--text-color-gray: #535353;
-	--accent-color-purple: #B0B0E7;
-	--accent-color-blue: #A1CEEC;
-	--accent-color-pink: #F2A4B7;
-	--accent-color-green: #B5DE8A;
-	--hover-color:#7B61FF;
+	--text-color-green: #0A6D61;
 	}
+
+
+/*HEADER*/
+.logo{
+	font-family: 'Fairwater Script', Arial, Helvetica, sans-serif;
+}
+
+.header__logo{
+	/* width: 100%; */
+}
+
+.header__banner{
+	display: flex;
+	justify-content: center;
+	height: 38px;
+	width: 100%;
+	background-color: var(--banner-color);
+	align-items: center;
+}
+
+.header__banner--icon{
+	display: inline-block;
+	padding-right: 8px;
+}
+	
+a.header__banner--text{
+	font-size: 14px;
+	line-height: 38px;
+	text-decoration: none;
+	color: var(--text-color-green);
+	padding-right: 24px;
+	display: flex;
+	vertical-align: center;
+}
+.header__banner a:hover{
+	cursor:default;
+}
 
 /* NAVIGATION */
 .mobile-bottom-nav {
@@ -79,4 +124,69 @@ body{
 
   
 
- 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.search-form {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background: #F1F1F1;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  font-size: 14px;
+  background: none;
+  color: #828282;
+  width: 195px;
+  height: 20px;
+  border: none;
+  appearance: none;
+  outline: none;
+  font-family: 'Poppins';
+}
+
+
+.search-button {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none!important;
+  cursor: pointer;
+}
+  
+
+.search-option {
+  position: absolute;
+  text-align: right;
+  top: 10px;
+  right: 15px;
+}
+
+
+
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
