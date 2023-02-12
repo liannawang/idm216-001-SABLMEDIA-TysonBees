@@ -64,8 +64,11 @@ body {
 :root {
   --background-color: #fefefe;
   --white: white;
-  --component-teal: #7ed1c6;
-  --menu-teal: #7ed1c6;
+  --component-teal: #a6e5dc;
+  --menu-teal: #9bdad1;
+  --menu-orange: #f5a990;
+  --menu-blue: #91caf3;
+  --menu-purple: #b7aaf0;
   --component-border: #f2f2f2;
   --banner-color: #f0f7f6;
   --nav-color-gray: #979797;
@@ -251,29 +254,54 @@ a.header__banner--text {
 
 /*menu categories*/
 .menu__category--name {
+  position: absolute;
   color: var(--white);
+  font-size: 24px;
+  z-index: 100;
 }
 .menu__category--image {
   position: absolute;
-  left: 0;
-  top: 5px;
-  height: 100px;
+  right: 8px;
+  top: 2px;
+  height: 105px;
   width: auto;
 }
+
+.menu__category--pattern {
+  height: 108px;
+  width: auto;
+  position: absolute;
+  left: -0.8px;
+  top: -1.7px;
+  z-index: 0;
+}
 .menu__category {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   border: 0.5px solid var(--component-border);
   height: 110px;
-  /* box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.04); */
-  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.04);
+  /* box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.08); */
   border-radius: 30px;
-  padding: 20px 24px;
+  padding: 16px 20px;
   position: relative;
-  padding-left: 125px;
+  /* padding-left: 125px; */
 }
+
+/* .menu__categories{
+	margin-top: 2rem;
+} */
 
 .teal {
   background-color: var(--menu-teal);
+}
+.orange {
+  background-color: var(--menu-orange);
+}
+.blue {
+  background-color: var(--menu-blue);
+}
+.purple {
+  background-color: var(--menu-purple);
 }
 
 /*overlay*/
