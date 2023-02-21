@@ -28,8 +28,14 @@
 .text__title {
   font-weight: 600;
   font-size: 1.125rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   color: var(--text-color-black);
+}
+
+
+
+.checkout {
+  padding-top: 1.5rem;
 }
 p {
   font-size: 14px;
@@ -46,6 +52,7 @@ body {
   font-family: "Poppins";
   background: var(--background-color);
   margin: 0;
+  color: var(--text-color-black);
 }
 
 .main {
@@ -237,7 +244,7 @@ cursor: pointer;
   font-weight: 500;
   border: none;
   color: var(--text-color-black);
-  position: absolute;
+  position: fixed;
   padding: 0.5rem 1rem;
   height: 42px;
   /* padding: 0.56rem 3.25rem; */
@@ -254,7 +261,7 @@ cursor: pointer;
   font-weight: 500;
   border: none;
   color: var(--white);
-  position: absolute;
+  position: fixed;
   height: 42px;
   width: 43%;
   right: 20px;
@@ -727,7 +734,7 @@ vertical-align: inherit;} */
 }
 .modify {
   margin-top: 1rem;
-  margin-bottom:2rem;
+  margin-bottom:1.5rem;
   /* box-shadow: 0px 12px 18px rgb(0 0 0 / 4%); */
   position: relative;
   text-align: center;
@@ -966,4 +973,109 @@ nav li a:focus,
   top: 16px;
   right: 18px;
   width: 36px;
+}
+
+
+/*radio button or payment*/
+.payment{
+  background-color: var(--white);
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.05);
+border-radius: 16px;
+width: 100%;
+padding: 20px 24px;
+}
+.venmo{
+  margin-bottom: 8px;
+}
+
+.payment__radio-container{
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #E7E6E6;
+border-radius: 12px;
+}
+
+.payment-icon{
+  padding-right:8px;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+label {
+	display: flex;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+  width: 100%;
+	}
+	.payment--text {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; 
+		transition: 0.25s ease;
+    font-size: 14px;
+  }
+
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    align-self: center;
+  }
+	
+  /*payment-info*/
+  .bold{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+.payment-info{
+  position:relative;
+  left:50%;
+  margin-top: 1.5rem;
+  width: 50%;
+  background: #FFFFFF;
+box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.05);
+border-radius: 16px;
+  padding: 1rem;
+}
+
+a.link{
+  color:#014F45;
+  text-decoration: underline;
+}
+
+.order-progress{
+  padding: 1rem 0.75rem ;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #F7EBCD;
+  height: 60px;
+}
+
+.progress-bar{
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.confirmation_button {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  /* padding: 0.56rem 3.25rem; */
+  background: #e37463;
+  border-radius: 20px;
 }
