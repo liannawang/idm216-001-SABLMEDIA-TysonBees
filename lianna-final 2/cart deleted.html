@@ -18,11 +18,21 @@
 
 <body>
   <img src="images/svg/Background.svg" class="background--mobile" />
+  <img src="images/svg/Background-desktop.svg" class="background--desktop" />
   <!-- Include this portion of code for the responsive hamburger menu-->
   <header>
-    <div class="header__logo">
-      <img src="images/svg/Logo+Bee.svg" alt="Bee with trail" />
-    </div>
+    <nav class=".desktop-nav nav" id="nav">
+      <div class="header__logo">
+          <a href="index.html">
+              <img src="images/svg/Logo+Bee.svg" alt="Bee with trail">
+          </a>
+          <div class="nav-right">
+              <a href="index.html" class="inactive">Home</a>
+              <a href="menu.html" class="active">Order</a>
+              <a href="rewards.html" class="inactive">Rewards</a>
+          </div>
+      </div>
+  </nav>
     <div class="header__banner">
       <a href="" class="header__banner--text"><img src="images/svg/clock.svg" class="header__banner--icon"
           alt="Clock Icon" />11:00 am - 5:00 pm</a>

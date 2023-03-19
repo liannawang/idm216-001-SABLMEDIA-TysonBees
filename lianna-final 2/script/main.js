@@ -45,16 +45,17 @@ $("document").ready(function(){
     $(".tab-slider--nav li").removeClass("active");
     $(this).addClass("active");
   });
-  
-  const open_btn = document.querySelector(".open-btn");
+  const open_btns = document.querySelectorAll(".open-btn");
 const close_btn = document.querySelector(".close-btn");
 const popup = document.querySelector(".popup");
 const main_popup = document.querySelector(".main-popup");
 
-open_btn.addEventListener("click", () => {
-  popup.style.display = "flex";
-  main_popup.style.cssText =
-    "animation:slide-in .5s ease; animation-fill-mode: forwards;";
+open_btns.forEach((open_btn) => {
+  open_btn.addEventListener("click", () => {
+    popup.style.display = "flex";
+    main_popup.style.cssText =
+      "animation:slide-in .5s ease; animation-fill-mode: forwards;";
+  });
 });
 
 close_btn.addEventListener("click", () => {
@@ -74,3 +75,4 @@ window.addEventListener("click", (e) => {
     }, 500);
   }
 });
+

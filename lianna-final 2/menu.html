@@ -19,10 +19,20 @@
 
   <body>
     <img src="images/svg/Background.svg" class="background--mobile" />
+    <img src="images/svg/Background-desktop.svg" class="background--desktop" />
     <header class="header">
-      <div class="header__logo">
-        <img src="images/svg/Logo+Bee.svg" alt="Bee with trail" />
-      </div>
+      <nav class=".desktop-nav nav" id="nav">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="images/svg/Logo+Bee.svg" alt="Bee with trail">
+            </a>
+            <div class="nav-right">
+                <a href="index.html" class="inactive">Home</a>
+                <a href="menu.html" class="active">Order</a>
+                <a href="rewards.html" class="inactive">Rewards</a>
+            </div>
+        </div>
+    </nav>
       <div class="header__banner">
         <a href="" class="header__banner--text"
           ><img
@@ -44,7 +54,7 @@
     <div class="main">
       <div class="menu__categories">
         <h1 class="menu text__title">Menu</h1>
-        <form class="search-form">
+        <!-- <form class="search-form">
           <input
             type="search"
             value=""
@@ -63,7 +73,7 @@
             /></a>
             <a href="filter.html"> <img src="images/svg/filter icon.svg" /></a>
           </div>
-        </form>
+        </form> -->
         <a href="menu-items.html">
           <div class="menu__category teal">
             <img

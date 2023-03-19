@@ -13,11 +13,21 @@
 </head>
 
 <body>
+    <img src="images/svg/Background-desktop.svg" class="background--desktop" />
     
     <header class="header">
-        <div class="header__logo">
-            <img src="images/svg/Logo+Bee.svg" alt="Bee with trail">
-        </div>
+        <nav class=".desktop-nav nav" id="nav">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/svg/Logo+Bee.svg" alt="Bee with trail">
+                </a>
+                <div class="nav-right">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="menu.html" class="inactive">Order</a>
+                    <a href="rewards.html" class="inactive">Rewards</a>
+                </div>
+            </div>
+        </nav>
         <div class="header__banner">
             <a href="" class="header__banner--text"><img src="images/svg/clock.svg" class="header__banner--icon"
                     alt="Clock Icon">11:00 am - 5:00 pm</a>
@@ -35,7 +45,7 @@
             <img class="start-order__pattern--top" src="images/svg/Teal Honeycomb Top.svg">
             <img class="start-order__pattern--bottom" src="images/svg/Teal Honeycomb Bottom.svg">
             <img class="start-order__pattern--bottom" src="images/png/Mobile-PNG/taco.png">
-            <div class="container">
+            <div class="toggle-container">
                 <div class="tab-slider--nav">
                     <ul class="tab-slider--tabs">
                         <li class="tab-slider--trigger active" rel="tab1">Asap</li>
