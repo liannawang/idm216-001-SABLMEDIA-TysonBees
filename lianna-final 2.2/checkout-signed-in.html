@@ -93,22 +93,35 @@
   
 
         <h1 class="checkout text__title">Payment Options</h1>
-        <div class="payment">
-            <form>
-                <div class="payment__radio-container venmo">
-                    <label>
-                        <input type="radio" name="radio"/>
-                        <span class="payment--text"> <img class="payment-icon" src="images/svg/blue venmo.svg" alt=""> Venmo</span>
-                    </label>
-                </div>
-               <div class="payment__radio-container">
-                <label>
-                    <input type="radio" name="radio"/>
-                    <span class="payment--text"><img class="payment-icon" src="images/png/Mobile-PNG/visa icon.png" alt="">**** **** **** 6246</span>
-                </label>
-               </div>
-            </form>
-        </div>
+        <div class="card__container">
+          <div class="checkout-card signedin">
+              <div class="row paypal">
+                  <div class="left">
+                    <label  for="pp">
+                      <input id="pp" type="radio" name="payment" />
+                      <div class="radio"></div>
+                      Paypal</label>
+                  </div>
+                  <div class="right">
+                      <img src="images/png/Mobile-PNG/venmo-card.png" alt="paypal" />
+                  </div>
+              </div>
+              <div class="row credit">
+                  <div class="left">
+                    <label  for="cd">
+                      <input id="cd" type="radio" name="payment" />
+                      <div class="radio"></div>
+                      VISA **** **** **** 6246</label>
+                  </div>
+                  <div class="right">
+                      <img src="images/svg/card.svg" alt="visa" />
+                      
+                  </div>
+              </div>
+           
+              
+          </div>
+      </div>
         <div class="payment-info">
           <p><span class="bold">Subtotal: </span>$12.00</p>
           <p><span class="bold">Tax: </span>$1.35</p>

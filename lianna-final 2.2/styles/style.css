@@ -2255,7 +2255,7 @@ h3 {
 }
 
 .checkout-card .row {
-  height: 20%;
+  height: 80px;
   width: 100%;
   background-color: #f7f7f7;
   border-bottom: 1.2px solid #e7e6e6;
@@ -2289,7 +2289,7 @@ h3 {
 .credit .left,
 .credit .right {
   position: relative;
-  top: 50%;
+  top: 40px;
   transform: translateY(-50%);
 }
 .paypal{
@@ -2361,7 +2361,7 @@ input[type="radio"]:checked ~ .radio::before {
 .cardholder .info,
 .number .info {
   position: relative;
-  top: 50%;
+  top: 40px;
   transform: translateY(-50%);
   margin-left: 40px;
   
@@ -2404,7 +2404,7 @@ input[type="radio"]:checked ~ .radio::before {
 .checkout-details .left,
 .checkout-details .right {
   position: relative;
-  top: 50%;
+  top: 40px;
   transform: translateY(-50%);
 }
 
@@ -2494,6 +2494,6 @@ input[type="radio"]:checked ~ .radio::before {
   margin-right: 5px;
 }
 
-.checkout-details{
-  color: #737373;
+.signedin{
+  height: 170px;
 }
