@@ -13,6 +13,31 @@
 </head>
 
 <body>
+  <div class="popup">
+    <div class="popup-overlay"></div>
+    <div class="main-popup">
+        <div class="login">
+            <img src="images/svg/X.svg" alt="x" class="close-btn"> <img src="images/png/Mobile-PNG/truck.gif"
+                alt="truck sign in" class="truck__loading">
+            <div class="logintitle">
+                Password
+            </div>
+            <form class="login-form">
+                <input type="text" value="" class="login-input" placeholder="Enter Username">
+            </form>
+            <div class="logintitle2">
+                Username
+            </div>
+            <form class="login-form2">
+                <input type="password" value="" class="login-input2" placeholder="Enter Password">
+            </form><a href="checkout-new.html"><button class="button__primary__sign">
+                <h2>Sign Up</h2></a>
+            </button> <button class="button__secondary__sign"><a href="checkout-signed-in.html">
+                    <h2>Sign In</h2>
+                </a></button>
+        </div>
+    </div>
+</div>
   <img src="images/svg/Background.svg" class="background--mobile" />
   <img src="images/svg/Background-desktop.svg" class="background--desktop" />
   <!-- Include this portion of code for the responsive hamburger menu-->
@@ -89,7 +114,7 @@
         </div> -->
         
           <div class="menu__item">
-            <img src="images/png/Mobile-PNG/Thai Basil Chicken Taco Picture.png" alt="Thai Basil Chicken Taco"
+            <img src="images/png/Mobile-PNG/thai basil chicken taco.png" alt="Thai Basil Chicken Taco"
               class="menu__item--image" />
             <h2 class="menu__item--name">Thai Basil Chicken Taco</h2>
             <p class="menu__item--price">$12.00</p>
@@ -130,9 +155,9 @@
     <a href="menu.html"><button class="button__secondary--cart">
         <h2>Add Items</h2>
       </button></a>
-    <a href="checkout.html"><button class="button__primary--cart">
+    <button class="button__primary--cart open-btn">
         <h2>Checkout</h2>
-      </button></a>
+      </button>
   </div>
   <mobile-footer__order></mobile-footer__order>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
