@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyson Bees</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/png/Mobile-PNG/Fav Icon.png?"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- <img
+      src="images/svg/Background.svg"
+      class="background--mobile"
+      alt="Background"
+    /> -->
+    <img
+      src="images/svg/Background-desktop.svg"
+      class="background--desktop"
+      alt="Background-desktop"
+    />
+    <header class="header">
+      <nav class=".desktop-nav nav" id="nav">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="images/svg/Logo+Bee.svg" alt="Bee with trail" />
+          </a>
+          <div class="nav-right">
+            <a href="index.html" class="inactive">Home</a>
+            <a href="menu.html" class="active">Order</a>
+            <a href="rewards.html" class="inactive">Rewards</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__banner">
+        <a href="" class="header__banner--text"
+          ><img
+            src="images/svg/clock.svg"
+            class="header__banner--icon"
+            alt="Clock Icon"
+          />11:00 am - 5:00 pm</a
+        >
+        <a href="" class="header__banner--text"
+          ><img
+            src="images/svg/place.svg"
+            class="header__banner--icon"
+            alt="Location Icon"
+          />3260 Spruce St.</a
+        >
+      </div>
+    </header>
+    <!-- Item Overlays -->
+
+    <div class="card-outer">
+      <a href="menu-items.html"
+        ><button class="close">
+          <img src="images/svg/X.svg" alt="x" class="close-btn" /></button
+      ></a>
+      <div class="">
+        <img
+          class="detail__item--image"
+          src="images/png/Mobile-PNG/korean beef taco.png"
+        />
+      </div>
+      <div class="card-inner">
+        <h2 class="detail__item--name">Thai Basil Chicken Taco</h2>
+        <h2 class="detail__item--price">$12.00</h2>
+        <p class="detail__item--description">
+          Made with lightly charred, seasoned grilled chicken, crisp, thinly
+          sliced fresh vegetables and creamy peanut sauce.<br /><br />
+        </p>
+        <h2 class="detail__item--name">Special Instructions:</h2>
+        <input id="rectangle" placeholder="Add special instructions..." type="text">        <!--<h2>Special Instructions</h2>
+              Taken from: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+                  Issue: Making all elements universally border boxes breaks this, which requires blocks.
+                  <label class="container"><h2>VEGETARIAN</h2><br>chickpea substitute
+                  <input type="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+                <label class="container"><h2>GLUTEN ALLERGY</h2><br>taco shell substitute
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><h2>DAIRY ALLERGY</h2><br>no cheese
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><h2>NUT ALLERGY</h2><br>no peanuts
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><h2>NO SPICE</h2><br>no hot sauce or spice
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>-->
+        <a href="cart.html"
+          ><button class="button__center"><h2>Add to Cart</h2></button></a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
